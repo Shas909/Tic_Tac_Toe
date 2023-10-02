@@ -1,0 +1,50 @@
+body {
+  background-color: #3a3c81;
+}
+.parent {
+  display: flex;
+  flex-direction: column;
+  height: 94vh;
+  justify-content: center;
+}
+.status {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  /* Add any other desired styles here */
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  background-color: #92eb44;
+  border: 2px solid #333;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.square {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  width: 100px;
+  height: 100px;
+  background-color: #87dbfc;
+  border: 2px solid #333;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.square:hover {
+  background-color: #c87676;
+}
